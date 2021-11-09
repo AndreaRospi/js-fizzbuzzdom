@@ -1,10 +1,17 @@
+const box= document.getElementById("lista")
+let x= 0;
+
 for (let i = 1; i <= 100; i++){
-    console.log(i);
-    if(i % 3 == 0){
-        console.log(i + ' multiplo di 3');
+    if(i % 15 == 0 ){
+        x ='fizzbuzz';
+    } else if(i % 3 == 0) {
+        x ='fizz';
+    } else if(i % 5 == 0){
+        x = 'buzz';
+    } else{
+        x = i;
     }
-    if(i % 5 == 0){
-        console.log(i+ ' multiplo di 5')
+    if (isNaN(x)){
+        box.innerHTML
     }
-    
 }
