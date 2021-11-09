@@ -11,5 +11,10 @@ for (let i = 1; i <= 100; i++){
     } else{
         x = i;
     }
-    griglia.innerHTML += `<div class="box">${x}</div>`
+    if(isNaN(x)){
+        griglia.innerHTML += `<div class="box ${x}">${x}</div>`;
+    } else {
+        griglia.innerHTML += `<div class="box">${x}</div>`;
+    
+    } 
 }
